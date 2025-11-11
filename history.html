@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>กิจกรรม - วัดเขาตะเกียบ</title>
+  <style>
+    :root{
+      --pale-yellow:#fff9e6;
+      --accent:#d9c37a;
+      --text:#222;
+      --muted:#555;
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Noto Sans Thai","Helvetica",Arial,sans-serif;
+      color:var(--text);
+      background:var(--pale-yellow);
+    }
+
+    .wrap{
+      max-width:var(--max-width);
+      margin:24px auto;
+      background:rgba(255,255,255,0.6);
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    }
+    header{
+      display:flex;
+      flex-direction:column;
+      padding:18px 24px;
+      background:linear-gradient(180deg,var(--pale-yellow),#fff);
+      border-bottom:1px solid rgba(0,0,0,0.04);
+    }
+    .top-row{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .site-title{font-weight:700;font-size:26px;cursor:pointer;color:var(--text);}
+    nav{
+      display:flex;
+      justify-content:flex-end;
+      gap:15px;
+      margin-top:10px;
+    }
+    nav a{
+      text-decoration:none;
+      color:var(--text);
+      font-weight:600;
+      padding:6px 12px;
+      border-radius:6px;
+    }
+    nav a:hover{background:rgba(217,195,122,0.3);}
+    .banner img{width:100%;height:auto;}
+    section{padding:30px;}
+    h2{text-align:center;color:#004aad;background:#cfe2ff;padding:10px;border-radius:8px;}
+
+    /* รูปใต้ที่มาของชื่อวัด */
+    .image-top{
+      text-align:center;
+      margin-top:15px;
+    }
+    .image-top img{
+      width:60%;
+      max-width:500px;
+      border-radius:10px;
+      display:block;
+      margin:0 auto 15px;
+    }
+    .image-top p{
+      font-size:16px;
+      color:var(--muted);
+      text-align:center;
+      max-width:800px;
+      margin:0 auto;
+    }
+
+    /* ตำนานวัด */
+    .three-cols{
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      flex-wrap:wrap;
+      margin-top:20px;
+    }
+    .three-cols .col{
+      flex:1;
+      min-width:250px;
+      background:rgba(255,255,255,0.7);
+      padding:15px;
+      border-radius:10px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.05);
+    }
+    .three-cols h3{
+      color:#004aad;
+      margin-top:0;
+    }
+
+    /* เจ้าอาวาส */
+    .two-cols{
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+    .image-left{
+      display:flex;
+      align-items:center;
+      flex:1;
+      min-width:280px;
+      gap:15px;
+      background:rgba(255,255,255,0.7);
+      padding:10px;
+      border-radius:10px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.05);
+    }
+    .image-left img{
+      width:120px;
+      height:120px;
+      object-fit:cover;
+      border-radius:8px;
+    }
+    .image-left .text p{
+      margin:0;
+      color:var(--muted);
+    }
+
+    /* วัตถุมงคล */
+    .amulets{
+      display:flex;
+      flex-direction:column;
+      gap:15px;
+    }
+    .amulet-item{
+      display:flex;
+      align-items:flex-start;
+      gap:15px;
+      background:rgba(255,255,255,0.7);
+      padding:15px;
+      border-radius:10px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.05);
+    }
+    .amulet-item img{
+      width:180px;
+      height:180px;
+      object-fit:cover;
+      border-radius:10px;
+    }
+    .amulet-item .text p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.6;
+    }
+
+    footer{
+      background:#fff;
+      border-top:1px solid rgba(0,0,0,0.04);
+      padding:12px 24px;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.2;
+    }
+
+    @media(max-width:900px){
+      .image-top img{width:80%;}
+      .three-cols{flex-direction:column;}
+      .image-left{flex-direction:column;align-items:flex-start;}
+      .amulet-item{flex-direction:column;align-items:center;text-align:center;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="top-row">
+        <div class="site-title" onclick="location.href='วัดเขา.html'">วัดเขาตะเกียบ</div>
+        <nav>
+          <a href="code/home.html">หน้าแรก</a>
+          <a href="code/history.html">ประวัติ</a>
+          <a href="landmark.html">สถานที่สำคัญ</a>
+          <a href="importance.html">ความสำคัญ</a>
+          <a href="activity.html">กิจกรรม</a>
+          <a href="travel.html">การเดินทาง</a>
+          <a href="voyage.html">สถานที่ท่องเที่ยว</a>
+
+        </nav>
+      </div>
+    </header>
+
+    <div class="banner">
+      <img src="img/bnประวัติ.png" alt="แบนเนอร์ประวัติ">
+    </div>
+
+    <section>
+      <h2>ที่มาของชื่อวัด</h2>
+      <div class="image-top">
+        <img src="img/ที่มา.jpg" alt="ที่มาของชื่อวัด">
+        <p>ตำนานวัดเขาตะเกียบมาจากเรื่องเล่าพื้นบ้านเรื่อง “ตาม่องล่าย” โดยเชื่อว่าชื่อวัดมาจากชิ้นส่วน “ตะเกียบ” ที่ตาม่องล่ายขว้างปาไปจนตกอยู่ที่เขาตะเกียบแห่งนี้ นอกจากนี้ ยังมีเรื่องเล่าอีกกระแสว่า ชื่อเรียกมาจากการมองเห็นโขดหินของเขาตะเกียบที่ทอดตัวยาวในทะเลดูคล้ายกับตะเกียบ</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>ตำนานวัดเขาตะเกียบ</h2>
+      <div class="three-cols">
+        <div class="col">
+          <h3>ตาม่องลาย</h3>
+          <p>เรื่องตาม่องล่าย: เป็นตำนานพื้นบ้านที่เล่าต่อกันมาว่า ตาม่องล่าย ได้อาละวาดขว้างปาสิ่งของต่างๆ จนทำให้เกิดเป็นเกาะต่างๆ ซึ่งชิ้นส่วนของตะเกียบได้ตกอยู่ที่เขาแห่งนี้</p>
+        </div>
+        <div class="col">
+          <h3>รูปลักษณ์ของเขา</h3>
+          <p>รูปลักษณ์ของเขาตะเกียบเมื่อมองจากทะเล จะเห็นแนวหินที่ทอดยาวพาดขึ้นไปดูคล้ายกับ “ตะเกียบ” เป็นที่มาของชื่อเขา</p>
+        </div>
+        <div class="col">
+          <h3>สิ่งศักดิ์สิทธิ์</h3>
+          <p>ภายในวัดประดิษฐานพระพุทธรูปปางห้ามสมุทรองค์ใหญ่ พระธาตุ และองค์เจ้าแม่กวนอิมพันมือขนาดใหญ่ ซึ่งเป็นสิ่งศักดิ์สิทธิ์คู่วัด</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>เจ้าอาวาสวัดเขาตะเกียบ</h2>
+      <div class="two-cols">
+        <div class="image-left">
+          <img src="img/อดีต.jpg" alt="อดีตเจ้าอาวาส">
+          <div class="text"><p><b>พระครูพิพัฒน์วรกิจ (หลวงพ่ออี๊ด)</b><br>อดีตเจ้าอาวาสผู้พัฒนาวัดให้เป็นที่รู้จักและเป็นแหล่งท่องเที่ยว ก่อนมรณภาพในปี พ.ศ. 2556</p></div>
+        </div>
+        <div class="image-left">
+          <img src="img/ปัจจุ.jpg" alt="เจ้าอาวาสปัจจุบัน">
+          <div class="text"><p><b>พระครูสมุห์ยงยุทธ กตธุโร</b><br>เจ้าอาวาสองค์ปัจจุบันของวัดเขาตะเกียบ</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>วัตถุมงคลประจำวัด</h2>
+      <div class="amulets">
+        <div class="amulet-item">
+          <img src="img/สารีริ.jpg" alt="พระบรมสารีริกธาตุ">
+          <div class="text"><p><b>1. พระบรมสารีริกธาตุ</b><br>ประดิษฐานอยู่บนยอดเขาภายในพระเจดีย์ ต้องเดินขึ้นบันได 128 ขั้นเพื่อไปสักการะ</p></div>
+        </div>
+        <div class="amulet-item">
+          <img src="img/กวนอิมพัน.jpg" alt="พระแม่กวนอิมพันมือ">
+          <div class="text"><p><b>2. องค์พระแม่กวนอิมพันมือ</b><br>ตั้งอยู่บนเนินเขามองเห็นวิวทะเลหัวหิน เป็นองค์ขนาดใหญ่ริมหน้าผา</p></div>
+        </div>
+        <div class="amulet-item">
+          <img src="img/เก๋ง.jpg" alt="เก๋งจีน">
+          <div class="text"><p><b>3. เก๋งจีน</b><br>สถาปัตยกรรมจีนภายในวัด เป็นที่ประดิษฐานของเจ้าแม่กวนอิมปางพันมือขนาดใหญ่</p></div>
+        </div>
+        <div class="amulet-item">
+          <img src="img/ปางห้าม.jpg" alt="พระพุทธรูปปางห้ามสมุทร">
+          <div class="text"><p><b>4. พระพุทธรูปปางห้ามสมุทร</b><br>องค์พระขนาดใหญ่สูง 16 เมตร ตั้งอยู่บริเวณเชิงเขาหันหน้าออกทะเล เป็นสัญลักษณ์สำคัญของวัด</p></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="contact">
+        ช่องทางการติดต่อ:<br>
+        โทรศัพท์: 0-0000-0000<br>
+        อีเมล: info@example.com
+      </div>
+      <div class="address">
+        ที่อยู่: ต.หนองแก อ.เมืองหัวหิน จ.ประจวบคีรีขันธ์<br>
+        ประเทศไทย
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
