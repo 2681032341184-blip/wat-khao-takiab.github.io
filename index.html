@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>วัดเขาตะเกียบ</title>
+  <style>
+    :root {
+      --pale-yellow:#fff9e6;
+      --accent:#d9c37a;
+      --text:#222;
+      --muted:#555;
+      --max-width:1100px;
+    }
+    * { box-sizing:border-box; scroll-behavior: smooth; }
+    body {
+      margin:0;
+      font-family:"Noto Sans Thai","Helvetica",Arial,sans-serif;
+      color:var(--text);
+      background:var(--pale-yellow);
+    }
+    .wrap { max-width:var(--max-width); margin:0 auto; }
+
+    header {
+      position:fixed;
+      top:0;
+      width:100%;
+      background:linear-gradient(180deg,var(--pale-yellow),#fff);
+      padding:12px 24px;
+      z-index:100;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:1px solid rgba(0,0,0,0.1);
+    }
+    .site-title { font-weight:700; font-size:26px; cursor:pointer; }
+    nav { display:flex; gap:12px; flex-wrap:wrap; }
+    nav a {
+      text-decoration:none; color:var(--text);
+      font-weight:600; padding:6px 12px; border-radius:6px;
+    }
+    nav a:hover { background:rgba(217,195,122,0.3); }
+
+    section {
+      padding:80px 24px 50px;
+      margin-top:60px;
+    }
+    h2 {
+      text-align:center;
+      color:#004aad;
+      background:#cfe2ff;
+      padding:10px;
+      border-radius:8px;
+      margin-bottom:20px;
+    }
+
+    /* กิจกรรม */
+    .gallery { display:flex; justify-content:center; gap:12px; margin:20px 0; flex-wrap:wrap; }
+    .gallery img { width:30%; height:200px; object-fit:cover; border-radius:10px; }
+    .activity-item { margin-bottom:10px; }
+    .activity-item b { color:#004aad; }
+
+    /* สไลด์โชว์ */
+    .slideshow-container { position:relative; max-width:800px; margin:20px auto; text-align:center; }
+    .slides img { width:100%; height:auto; border-radius:10px; display:none; }
+    .prev,.next {
+      cursor:pointer; position:absolute; top:50%;
+      padding:10px 14px; color:white; font-weight:bold; font-size:22px;
+      background:rgba(0,0,0,0.4); transform:translateY(-50%);
+    }
+    .prev { left:0; border-radius:0 6px 6px 0; }
+    .next { right:0; border-radius:6px 0 0 6px; }
+    .prev:hover,.next:hover { background:rgba(0,0,0,0.7); }
+
+    /* Travel & Places */
+    .travel-method,.place {
+      display:flex; align-items:center; gap:20px; margin-bottom:20px;
+      background:#fff9c4; border-radius:10px; padding:12px; flex-wrap:wrap;
+    }
+    .travel-method img,.place img { width:45%; border-radius:10px; object-fit:cover; }
+    .travel-method div,.place-info { width:50%; font-size:16px; line-height:1.6; color:#004aad; }
+
+    footer {
+      background:#fff; border-top:1px solid rgba(0,0,0,0.04);
+      padding:14px 24px; display:flex; justify-content:space-between; flex-wrap:wrap; color:var(--muted); font-size:14px;
+    }
+
+    @media(max-width:900px){
+      .travel-method,.place { flex-direction:column; }
+      .travel-method img,.place img,.travel-method div,.place-info{ width:100%; }
+      .gallery img { width:45%; margin-bottom:10px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+   <header>
+  <div class="top-row">
+    <div class="site-title" onclick="location.href='home.html'">วัดเขาตะเกียบ</div>
+    <nav>
+      <a href="code/home.html">หน้าแรก</a>
+      <a href="code/history.html">ประวัติ</a>
+      <a href="landmark.html">สถานที่สำคัญ</a>
+      <a href="importance.html">ความสำคัญ</a>
+      <a href="activity.html">กิจกรรม</a>
+      <a href="travel.html">การเดินทาง</a>
+      <a href="voyage.html">สถานที่ท่องเที่ยว</a>
+    </nav>
+  </div>
+</header>
+
+  </header>
+
+  <div class="wrap">
+    <!-- หน้าแรก / Banner -->
+    <section id="home">
+      <h2>วัดเขาตะเกียบ</h2>
+      <img src="img/banner_home.jpg" alt="แบนเนอร์วัด" style="width:100%;border-radius:12px;">
+    </section>
+
+    <!-- ประวัติ -->
+    <section id="history">
+      <h2>ประวัติ</h2>
+      <p>เนื้อหาประวัติวัดเขาตะเกียบ...</p>
+    </section>
+
+    <!-- สถานที่สำคัญ -->
+    <section id="landmark">
+      <h2>สถานที่สำคัญ</h2>
+      <div class="place">
+        <img src="img/องค์ใหญ่.jpg" alt="พระพุทธรูปองค์ใหญ่">
+        <div class="place-info">
+          <b>พระพุทธรูปปางห้ามสมุทร</b><br>เนื้อหาสถานที่สำคัญ...
+        </div>
+      </div>
+    </section>
+
+    <!-- ความสำคัญ -->
+    <section id="importance">
+      <h2>ความสำคัญ</h2>
+      <p>เนื้อหาความสำคัญของวัด...</p>
+    </section>
+
+    <!-- กิจกรรม -->
+    <section id="activity">
+      <h2>กิจกรรม</h2>
+      <div class="gallery">
+        <img src="img/กิจ1.jpg" alt="">
+        <img src="img/กิจ2.jpg" alt="">
+        <img src="img/กิจ3.jpg" alt="">
+      </div>
+      <div class="activity-item"><b>1. ไหว้ขอพร</b> สักการะพระพุทธรูป...</div>
+      <div class="activity-item"><b>2. ชมวิวและถ่ายรูป</b>...</div>
+
+      <div class="slideshow-container">
+        <div class="slides"><img src="img/photo1.jpg"></div>
+        <div class="slides"><img src="img/photo2.jpg"></div>
+        <div class="slides"><img src="img/photo3.jpg"></div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </section>
+
+    <!-- การเดินทาง -->
+    <section id="travel">
+      <h2>การเดินทาง</h2>
+      <div class="travel-method">
+        <img src="img/ยน.jpg" alt="">
+        <div>รถยนต์ส่วนตัว...</div>
+      </div>
+      <div class="travel-method">
+        <img src="img/สองแถว.jpg" alt="">
+        <div>รถสองแถวสายหัวหิน–ตะเกียบ...</div>
+      </div>
+    </section>
+
+    <!-- สถานที่ท่องเที่ยวใกล้เคียง -->
+    <section id="voyage">
+      <h2>สถานที่ท่องเที่ยวใกล้เคียง</h2>
+      <div class="place">
+        <img src="img/หาดเขาตะเกียบ.jpg" alt="">
+        <div class="place-info">หาดเขาตะเกียบ...</div>
+      </div>
+      <div class="place">
+        <img src="img/ตลาดชิค.jpg" alt="">
+        <div class="place-info">ตลาดซิคาด้า...</div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        ช่องทางการติดต่อ:<br>
+        โทร: 0-0000-0000<br>
+        อีเมล: info@example.com
+      </div>
+      <div>
+        ที่อยู่: ต.หนองแก อ.เมืองหัวหิน จ.ประจวบคีรีขันธ์
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // สไลด์โชว์
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n){ showSlides(slideIndex += n); }
+    function showSlides(n){
+      let slides = document.getElementsByClassName("slides");
+      if(n>slides.length) slideIndex=1;
+      if(n<1) slideIndex=slides.length;
+      for(let i=0;i<slides.length;i++){ slides[i].style.display="none"; }
+      slides[slideIndex-1].style.display="block";
+    }
+    // Auto play
+    setInterval(()=>{ plusSlides(1); },5000);
+  </script>
+</body>
+</html>
